@@ -9,6 +9,7 @@ import {
   Facebook,
   Instagram,
 } from "lucide-react";
+import FaqAccordion from "@/components/faq-accordion";
 
 export default function ContactUs() {
   return (
@@ -48,7 +49,6 @@ export default function ContactUs() {
             {/* Contact Details */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="space-y-8">
-                {/* Phone */}
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-blue-600" />
@@ -75,7 +75,6 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-blue-600" />
@@ -96,7 +95,6 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                {/* Address */}
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-blue-600" />
@@ -115,7 +113,6 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                {/* Business Hours */}
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <Clock className="h-6 w-6 text-blue-600" />
@@ -133,7 +130,6 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                {/* Social Media */}
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <MessageCircle className="h-6 w-6 text-blue-600" />
@@ -186,8 +182,8 @@ export default function ContactUs() {
 
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+        <div className="container flex flex-col lg:flex-row justify-between px-6 md:px-8 lg:px-20">
+          <div className="">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
               Frequently Asked Questions
             </h2>
@@ -195,46 +191,7 @@ export default function ContactUs() {
               Find quick answers to common questions about our services.
             </p>
           </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold text-blue-800 mb-2">
-                What areas do you service?
-              </h3>
-              <p className="text-gray-700">
-                We provide water system installation and maintenance services
-                throughout Florida, with our primary service area covering Tampa
-                Bay, Clearwater, St. Petersburg, and surrounding communities.
-                For larger commercial and industrial projects, we serve clients
-                nationwide.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold text-blue-800 mb-2">
-                Do you offer free consultations?
-              </h3>
-              <p className="text-gray-700">
-                Yes, we provide complimentary initial consultations for all
-                residential and commercial projects. Our experts will assess
-                your needs, discuss potential solutions, and provide a detailed
-                quote before any work begins.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold text-blue-800 mb-2">
-                What is your response time for emergencies?
-              </h3>
-              <p className="text-gray-700">
-                Our emergency response team is available 24/7. For urgent
-                issues, we typically dispatch technicians within 1-2 hours in
-                our local service area. We understand that water system failures
-                can cause significant disruption and damage, so we prioritize
-                emergency calls.
-              </p>
-            </div>
-          </div>
+          <FaqAccordion />
         </div>
       </section>
 
@@ -245,19 +202,19 @@ export default function ContactUs() {
             Ready for Better Water Systems?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Contact us today to discuss your project and discover how AquaFlow
-            can help.
+            Contact us today to discuss your project and discover how we at
+            Tre-mic Technologies Ltd can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+18005557890"
+              href="tel:+2348067233304"
               className="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
               CALL NOW
             </a>
             <a
-              href="mailto:info@aquaflowinc.com"
+              href="mailto:tremictech@gmail.com"
               className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
             >
               <Mail className="h-5 w-5" />

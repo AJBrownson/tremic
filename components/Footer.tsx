@@ -99,11 +99,11 @@ const Footer = () => {
               <p className="mb-2">43 Clem Rd, Off Lagos-Abeokuta Express way, Lagos State</p>
               <p className="mb-2">
                 <PhoneCall className="h-4 w-4 inline mr-2" />
-                08067233304
+                +2348067233304
               </p>
               <p className="mb-2">
                 <PhoneCall className="h-4 w-4 inline mr-2" />
-                08061581911
+                +2348061581911
               </p>
               <p>
                 <Mail className="h-4 w-4 inline mr-2" />

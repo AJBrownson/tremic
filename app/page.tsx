@@ -1,16 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  PhoneCall,
-  Mail,
-  Download,
-  Facebook,
-  Twitter,
-  Linkedin,
-  MessageCircle,
-} from "lucide-react";
-import { ServiceCarousel } from "./components/carousel";
-import { TestimonialSection } from "./components/testimonials";
+import { ServiceCarousel } from "@/components/carousel";
+import { TestimonialSection } from "@/components/testimonials";
 
 export default function Home() {
   return (
