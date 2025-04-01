@@ -9,6 +9,7 @@ import {
   Linkedin,
   MessageCircle,
 } from "lucide-react";
+import { ServiceCarousel } from "./components/carousel";
 
 export default function Home() {
   return (
@@ -95,88 +96,50 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Residential Water Systems"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-800 mb-3">
-                  Residential Water Systems
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Complete water solutions for homes including filtration,
-                  softening, purification, and efficient distribution systems.
-                </p>
-                <Link
-                  href="/services/residential"
-                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Commercial Water Systems"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-800 mb-3">
-                  Commercial Water Systems
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Scalable water management solutions for businesses, offices,
-                  and retail establishments with focus on efficiency.
-                </p>
-                <Link
-                  href="/services/commercial"
-                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Industrial Water Systems"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-800 mb-3">
-                  Industrial Water Systems
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Heavy-duty water treatment, recycling, and distribution
-                  systems for manufacturing and industrial facilities.
-                </p>
-                <Link
-                  href="/services/industrial"
-                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ServiceCarousel
+            services={[
+              {
+                id: "residential",
+                title: "Residential Water Systems",
+                description:
+                  "Complete water solutions for homes including filtration, softening, purification, and efficient distribution systems. We ensure clean, safe water for your family.",
+                image: "/placeholder.svg?height=200&width=400",
+                link: "/services/residential",
+              },
+              {
+                id: "commercial",
+                title: "Commercial Water Systems",
+                description:
+                  "Scalable water management solutions for businesses, offices, and retail establishments with focus on efficiency and reliability. Reduce costs while ensuring quality.",
+                image: "/placeholder.svg?height=200&width=400",
+                link: "/services/commercial",
+              },
+              {
+                id: "industrial",
+                title: "Industrial Water Systems",
+                description:
+                  "Heavy-duty water treatment, recycling, and distribution systems for manufacturing and industrial facilities. Custom solutions for high-volume requirements.",
+                image: "/placeholder.svg?height=200&width=400",
+                link: "/services/industrial",
+              },
+              {
+                id: "maintenance",
+                title: "Maintenance & Repair",
+                description:
+                  "Regular maintenance and emergency repair services for all types of water systems. Keep your system running efficiently with our expert technicians.",
+                image: "/placeholder.svg?height=200&width=400",
+                link: "/services/maintenance",
+              },
+              {
+                id: "consultation",
+                title: "Water System Consultation",
+                description:
+                  "Expert advice on water system design, upgrades, and efficiency improvements. Our consultants help you make informed decisions for your water needs.",
+                image: "/placeholder.svg?height=200&width=400",
+                link: "/services/consultation",
+              },
+            ]}
+          />
         </div>
       </div>
 
