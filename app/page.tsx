@@ -10,6 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { ServiceCarousel } from "./components/carousel";
+import { TestimonialSection } from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -64,16 +65,16 @@ export default function Home() {
             Delivering Excellence in Water Systems Installation and Maintenance
           </h2>
           <p className="text-gray-700 mb-6">
-            With over 15 years of experience, Tre-Mic specializes in
-            installing, and maintaining advanced water systems for
-            residential, commercial, and industrial applications. Our commitment
-            to quality, innovation, and sustainability has made us a trusted
-            partner for clients across the nation.
+            With over 15 years of experience, Tre-Mic specializes in installing,
+            and maintaining advanced water systems for residential, commercial,
+            and industrial applications. Our commitment to quality, innovation,
+            and sustainability has made us a trusted partner for clients across
+            the nation.
           </p>
           <p className="text-gray-700 mb-8">
-            We pride ourselves on delivering customized solutions that
-            meet the unique needs of each client, ensuring efficient water
-            usage, reduced environmental impact, and long-term reliability.
+            We pride ourselves on delivering customized solutions that meet the
+            unique needs of each client, ensuring efficient water usage, reduced
+            environmental impact, and long-term reliability.
           </p>
           {/* <Link
             href="/about-us"
@@ -88,9 +89,7 @@ export default function Home() {
       <div className="bg-gray-100 py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-blue-600 font-medium mb-2">
-             What We Do
-            </div>
+            <div className="text-blue-600 font-medium mb-2">What We Do</div>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
               Comprehensive Water System Solutions
             </h2>
@@ -143,6 +142,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Testimonial Section */}
+      <TestimonialSection />
+
       {/* CTA Section */}
       <div className="bg-blue-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -153,17 +155,17 @@ export default function Home() {
             Contact our team of experts today for a free consultation and quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            {/* <Link
               href="/contact-us"
               className="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-md font-medium transition-colors"
             >
               CONTACT US
-            </Link>
+            </Link> */}
             <Link
               href="/services"
-              className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-md font-medium transition-colors"
+              className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 font-medium transition-colors"
             >
-              EXPLORE SERVICES
+              Get a Quote
             </Link>
           </div>
         </div>
