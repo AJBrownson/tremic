@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tremic Technologies LTD - Advanced Water Systems Installation",
+  title: "Tre-Mic Technologies Ltd - Advanced Water Systems Installation",
   description:
     "Your partner in excellence for advanced water systems and sustainable solutions for residential, commercial, and industrial applications.",
 };

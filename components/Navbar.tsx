@@ -13,7 +13,7 @@ const Navbar = () => {
   const menuItems = [
     { name: "About Us", link: "/about-us" },
     { name: "Gallery", link: "/gallery" },
-    { name: "Contact Us", link: "/contact" },
+    { name: "Contact Us", link: "/contact-us" },
   ];
 
   // Prevent body scrolling when menu is open
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-screen bg-[#13271A] bg-opacity-50 transition-all ease-in-out duration-300 ${
+          className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 transition-all ease-in-out duration-300 ${
             menuOpen ? "block" : "hidden"
           }`}
           onClick={() => setMenuOpen(false)}

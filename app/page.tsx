@@ -37,7 +37,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
-            Tre-Mic Technolgies Ltd
+            Tre-Mic Technologies Ltd
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-3xl mb-8">
             Your Partner in Excellence for Advanced Water System Installations

@@ -12,7 +12,7 @@ export function Testimonial({ quote, name, image, className }: TestimonialProps)
   return (
     <div className={cn("bg-white rounded-2xl shadow-sm p-6 flex flex-col h-full", className)}>
       {/* Quote mark */}
-      <div className="text-5xl font-serif text-blue-600 leading-none mb-4">&ldquo;</div>
+      <div className="text-5xl font-serif text-blue-600 leading-none">&ldquo;</div>
 
       {/* Testimonial text */}
       <p className="text-gray-700 flex-grow mb-6">{quote}</p>
@@ -40,19 +40,19 @@ export function TestimonialSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Testimonial
             quote="Tre-Mic's residential water system installation was flawless. Their team was professional, knowledgeable, and completed the job ahead of schedule. The water quality improvement has been remarkable. Highly recommended!"
-            name="Michael Thompson"
+            name="Oludare Jimoh"
             image="/placeholder.svg?height=48&width=48"
           />
 
           <Testimonial
             quote="As a restaurant owner, water quality is critical to our business. Tre-Mic designed a custom filtration system that has improved our water taste and reduced maintenance costs. Their ongoing support has been exceptional."
-            name="Sarah Johnson"
+            name="Iyke Ogbonna"
             image="/placeholder.svg?height=48&width=48"
           />
 
           <Testimonial
             quote="We contracted Tre-Mic for our manufacturing facility's water recycling system. Their innovative solution has reduced our water consumption by 40% and paid for itself within a year. Their expertise is unmatched in the industry."
-            name="David Chen"
+            name="Kareem Ismaila"
             image="/placeholder.svg?height=48&width=48"
           />
         </div>
