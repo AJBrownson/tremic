@@ -41,45 +41,45 @@ export default function Home() {
             Your Partner in Excellence for Advanced Water System Installations
             and Sustainable Solutions.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md flex items-center gap-2 transition-colors">
+          <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
             Get a Quote
           </button>
         </div>
       </section>
 
       {/* About Section */}
-      <div className="py-16 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <div className="bg-white py-16 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <div className="relative h-[400px]">
           <Image
-            src="/placeholder.svg?height=400&width=600"
-            alt="Water System Installation"
+            src="/image13.jpg"
+            alt=""
             fill
             className="object-cover rounded-lg"
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="text-blue-600 font-medium mb-2">About Tre-Mic Technologies Ltd</div>
+          <div className="text-blue-900 font-medium mb-2">Who We Are</div>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-            Delivering Excellence in Water Systems Worldwide
+            Delivering Excellence in Water Systems Installation and Maintenance
           </h2>
           <p className="text-gray-700 mb-6">
             With over 15 years of experience, Tre-Mic specializes in
-            designing, installing, and maintaining advanced water systems for
+            installing, and maintaining advanced water systems for
             residential, commercial, and industrial applications. Our commitment
             to quality, innovation, and sustainability has made us a trusted
             partner for clients across the nation.
           </p>
           <p className="text-gray-700 mb-8">
-            We pride ourselves on delivering customized water solutions that
+            We pride ourselves on delivering customized solutions that
             meet the unique needs of each client, ensuring efficient water
             usage, reduced environmental impact, and long-term reliability.
           </p>
-          <Link
+          {/* <Link
             href="/about-us"
             className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors self-start"
           >
             LEARN MORE
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-blue-600 font-medium mb-2">
-              // OUR SERVICES
+             What We Do
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
               Comprehensive Water System Solutions
