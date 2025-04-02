@@ -12,17 +12,17 @@ export function Testimonial({ quote, name, image, className }: TestimonialProps)
   return (
     <div className={cn("bg-white rounded-2xl shadow-sm p-6 flex flex-col h-full", className)}>
       {/* Quote mark */}
-      <div className="text-5xl font-serif text-blue-600 leading-none">&ldquo;</div>
+      <div className="text-5xl font-kumbh text-blue-600 leading-none">&ldquo;</div>
 
       {/* Testimonial text */}
-      <p className="text-gray-700 flex-grow mb-6">{quote}</p>
+      <p className="font-kumbh text-gray-700 flex-grow mb-6">{quote}</p>
 
       {/* Customer info */}
       <div className="flex items-center gap-3 mt-auto">
         <div className="relative w-12 h-12 overflow-hidden rounded-full">
           <Image src={image || "/placeholder.svg"} alt={name} width={48} height={48} className="object-cover" />
         </div>
-        <span className="font-medium text-blue-600">{name}</span>
+        <span className="font-kumbh font-medium text-blue-600">{name}</span>
       </div>
     </div>
   )
@@ -33,8 +33,7 @@ export function TestimonialSection() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <div className="text-blue-600 font-medium mb-2">What Our Clients Say</div>
-          {/* <h2 className="text-3xl md:text-4xl font-bold text-blue-900">Trusted by Homeowners and Businesses</h2> */}
+          <div className="font-montserrat text-blue-600 font-medium mb-2">What Our Clients Say</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

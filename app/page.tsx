@@ -27,14 +27,14 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
+          <h1 className="font-montserrat text-4xl md:text-6xl font-bold text-center mb-4">
             Tre-Mic Technologies Ltd
           </h1>
-          <p className="text-xl md:text-2xl text-center max-w-3xl mb-8">
+          <p className="font-kumbh text-xl md:text-2xl text-center max-w-3xl mb-8">
             Your Partner in Excellence for Advanced Water System Installations
             and Sustainable Solutions.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
+          <button className="font-kumbh bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
             Get a Quote
           </button>
         </div>
@@ -51,18 +51,18 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="text-blue-900 font-medium mb-2">Who We Are</div>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+          <div className="font-montserrat text-blue-900 font-medium mb-2">Who We Are</div>
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-6">
             Delivering Excellence in Water Systems Installation and Maintenance
           </h2>
-          <p className="text-gray-700 mb-6">
+          <p className="font-kumbh text-gray-700 mb-6">
             With over 15 years of experience, Tre-Mic specializes in installing,
             and maintaining advanced water systems for residential, commercial,
             and industrial applications. Our commitment to quality, innovation,
             and sustainability has made us a trusted partner for clients across
             the nation.
           </p>
-          <p className="text-gray-700 mb-8">
+          <p className="font-kumbh text-gray-700 mb-8">
             We pride ourselves on delivering customized solutions that meet the
             unique needs of each client, ensuring efficient water usage, reduced
             environmental impact, and long-term reliability.
@@ -80,8 +80,8 @@ export default function Home() {
       <div className="bg-gray-100 py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-blue-600 font-medium mb-2">What We Do</div>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+            <div className="font-montserrat text-blue-600 font-medium mb-2">What We Do</div>
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900">
               Comprehensive Water System Solutions
             </h2>
           </div>
@@ -139,10 +139,10 @@ export default function Home() {
       {/* CTA Section */}
       <div className="bg-blue-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Ready to Upgrade Your Water System?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact our team of experts today for a free consultation and quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -154,7 +154,7 @@ export default function Home() {
             </Link> */}
             <Link
               href="/services"
-              className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 font-medium transition-colors"
+              className="font-kumbh bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 font-medium transition-colors"
             >
               Get a Quote
             </Link>

@@ -20,10 +20,10 @@ export default function ContactUs() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-center mb-6">
+          <h1 className="font-montserrat text-5xl md:text-7xl font-bold text-center mb-6">
             Contact Us
           </h1>
-          <div className="flex items-center gap-2 text-lg">
+          <div className="font-kumbh flex items-center gap-2 text-lg">
             <Link href="/" className="hover:underline">
               Home
             </Link>
@@ -37,10 +37,10 @@ export default function ContactUs() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="font-kumbh text-xl text-gray-600 max-w-3xl mx-auto">
               Prefer to talk directly? Call, email, or DM us!
             </p>
           </div>
@@ -54,22 +54,22 @@ export default function ContactUs() {
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-1">
+                    <h3 className="font-kumbh text-xl font-bold text-blue-800 mb-1">
                       Phone
                     </h3>
                     <a
                       href="tel:+2348067233304"
-                      className="text-gray-700 hover:text-blue-600 transition-colors block"
+                      className="font-kumbh text-gray-700 hover:text-blue-600 transition-colors block"
                     >
                       +234 806 723 3304
                     </a>
                     <a
                       href="tel:+2348061581911"
-                      className="text-gray-700 hover:text-blue-600 transition-colors block"
+                      className="font-kumbh text-gray-700 hover:text-blue-600 transition-colors block"
                     >
                       +234 806 158 1911
                     </a>
-                    <p className="text-gray-500 text-sm mt-1">
+                    <p className="font-kumbh text-gray-500 text-sm mt-1">
                       Click to call on mobile devices
                     </p>
                   </div>
@@ -80,16 +80,16 @@ export default function ContactUs() {
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-1">
+                    <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-1">
                       Email
                     </h3>
                     <a
                       href="mailto:tremictech@gmail.com"
-                      className="text-gray-700 hover:text-blue-600 transition-colors block"
+                      className="font-kumbh text-gray-700 hover:text-blue-600 transition-colors block"
                     >
                       tremictech@gmail.com
                     </a>
-                    <p className="text-gray-500 text-sm mt-1">
+                    <p className="font-kumbh text-gray-500 text-sm mt-1">
                       We typically respond within 24 hours
                     </p>
                   </div>
@@ -100,10 +100,10 @@ export default function ContactUs() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-1">
+                    <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-1">
                       Address
                     </h3>
-                    <address className="text-gray-700 not-italic">
+                    <address className="font-kumbh text-gray-700 not-italic">
                       43 Clem Rd
                       <br />
                       Off Lagos-Abeokuta Express Way
@@ -118,13 +118,13 @@ export default function ContactUs() {
                     <Clock className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-1">
+                    <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-1">
                       Business Hours
                     </h3>
-                    <p className="text-gray-700">Monday - Friday: 8AM–5PM</p>
-                    <p className="text-gray-700">Saturday: 9AM–2PM</p>
-                    <p className="text-gray-700">Sunday: Closed</p>
-                    <p className="text-gray-500 text-sm mt-1">
+                    <p className="font-kumbh text-gray-700">Monday - Friday: 8AM–5PM</p>
+                    <p className="font-kumbh text-gray-700">Saturday: 9AM–2PM</p>
+                    <p className="font-kumbh text-gray-700">Sunday: Closed</p>
+                    <p className="font-kumbh text-gray-500 text-sm mt-1">
                       24/7 Emergency Service Available
                     </p>
                   </div>
@@ -135,7 +135,7 @@ export default function ContactUs() {
                     <MessageCircle className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-1">
+                    <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-1">
                       Social Media
                     </h3>
                     <div className="flex gap-4 mt-2">
@@ -154,7 +154,7 @@ export default function ContactUs() {
                         <Facebook className="h-5 w-5" />
                       </a>
                     </div>
-                    <p className="text-gray-500 text-sm mt-2">
+                    <p className="font-kumbh text-gray-500 text-sm mt-2">
                       Follow us for updates and tips
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export default function ContactUs() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Tre-Mic Technologies Ltd Location"
-                className="w-full h-full"
+                className="w-full h-full font-kumbh"
               ></iframe>
             </div>
           </div>
@@ -184,10 +184,10 @@ export default function ContactUs() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container flex flex-col lg:flex-row justify-between px-6 md:px-8 lg:px-20">
           <div className="">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-600">
+            <p className="font-kumbh text-gray-600">
               Find quick answers to common questions about our services.
             </p>
           </div>
@@ -198,24 +198,24 @@ export default function ContactUs() {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Ready for Better Water Systems?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact us today to discuss your project and discover how we at
             Tre-mic Technologies Ltd can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+2348067233304"
-              className="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
+              className="font-kumbh bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
               CALL NOW
             </a>
             <a
               href="mailto:tremictech@gmail.com"
-              className="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
+              className="font-kumbh bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 rounded-md font-medium transition-colors inline-flex items-center justify-center gap-2"
             >
               <Mail className="h-5 w-5" />
               EMAIL US

@@ -42,7 +42,7 @@ const Navbar = () => {
               height={24}
               className="lg:w-[60px] lg:h-[32px]"
             />
-            <h1 className="text-[#0884c6] text-sm lg:text-lg">
+            <h1 className="font-kumbh text-black hover:text-[#0884c6] text-sm lg:text-lg">
               Tre-Mic Technologies Ltd
             </h1>
           </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <div key={item.name} className="text-sm">
                   <a
                     href={item.link}
-                    className={`transition ${
+                    className={`transition font-kumbh ${
                       pathname === item.link
                         ? "text-[#0884c6]"
                         : "hover:text-[#0884c6]"
@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-3 lg:space-x-4">
               <div className="hidden text-sm lg:flex space-x-2">
                 <button
-                  className="px-3 py-1 lg:px-4 lg:py-2 text-[#0884c6] font-bold border border-[#0884c6]"
+                  className="font-kumbh px-3 py-1 lg:px-4 lg:py-2 text-[#0884c6] font-bold border border-[#0884c6]"
                   // onClick={() => router.push("/contact")}
                 >
                   Get a Quote
@@ -109,10 +109,10 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.link}
-                className={`block text-gray-700 text-base ${
+                className={`font-kumbh block text-gray-700 text-base ${
                   pathname === item.link
-                    ? "text-green-500"
-                    : "hover:text-green-500"
+                    ? "text-[#0884c6]"
+                    : "hover:text-[#0884c6]"
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
@@ -122,7 +122,7 @@ const Navbar = () => {
 
             <div className=" text-sm lg:flex space-x-2">
               <button
-                className="px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
+                className="font-kumbh px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
                 // onClick={() => router.push("/contact")}
               >
                 Get a Quote
