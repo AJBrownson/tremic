@@ -1,61 +1,67 @@
-import Image from "next/image"
-import { cn } from "@/lib/utils"
+import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 interface TestimonialProps {
-  quote: string
-  name: string
-  image: string
-  className?: string
+  quote: string;
+  name: string;
+  className?: string;
 }
 
-export function Testimonial({ quote, name, image, className }: TestimonialProps) {
+export function Testimonial({
+  quote,
+  name,
+  className,
+}: TestimonialProps) {
   return (
-    <div className={cn("bg-white rounded-2xl shadow-sm p-6 flex flex-col h-full", className)}>
+    <div
+      className={cn(
+        "bg-white rounded-2xl shadow-sm p-6 flex flex-col h-full",
+        className
+      )}
+    >
       {/* Quote mark */}
-      <div className="text-5xl font-kumbh text-blue-600 leading-none">&ldquo;</div>
+      <div className="text-5xl font-kumbh text-blue-600 leading-none">
+        &ldquo;
+      </div>
 
       {/* Testimonial text */}
       <p className="font-kumbh text-gray-700 flex-grow mb-6">{quote}</p>
 
       {/* Customer info */}
       <div className="flex items-center gap-3 mt-auto">
-        <div className="relative w-12 h-12 overflow-hidden rounded-full">
-          <Image src={image || "/placeholder.svg"} alt={name} width={48} height={48} className="object-cover" />
-        </div>
         <span className="font-kumbh font-medium text-blue-600">{name}</span>
       </div>
     </div>
-  )
+  );
 }
 
 export function TestimonialSection() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 md:px-10 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <div className="font-montserrat text-blue-600 font-medium mb-2">What Our Clients Say</div>
+          <div className="font-montserrat text-blue-600 font-medium mb-2">
+            What Our Clients Say
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Testimonial
-            quote="Tre-Mic's residential water system installation was flawless. Their team was professional, knowledgeable, and completed the job ahead of schedule. The water quality improvement has been remarkable. Highly recommended!"
+            quote="Tre-Mic’s custom fabrication work exceeded our expectations. Their team delivered precision welding and installation ahead of deadline, and the structure has held up perfectly under heavy industrial use. True professionals!"
             name="Oludare Jimoh"
-            image="/placeholder.svg?height=48&width=48"
           />
 
           <Testimonial
-            quote="As a restaurant owner, water quality is critical to our business. Tre-Mic designed a custom filtration system that has improved our water taste and reduced maintenance costs. Their ongoing support has been exceptional."
+            quote="We hired Tre-Mic to design and install steel supports for our commercial facility. Their expertise saved us 30% on material costs, and their maintenance team keeps everything running smoothly. Five-star service!"
             name="Iyke Ogbonna"
-            image="/placeholder.svg?height=48&width=48"
           />
 
           <Testimonial
-            quote="We contracted Tre-Mic for our manufacturing facility's water recycling system. Their innovative solution has reduced our water consumption by 40% and paid for itself within a year. Their expertise is unmatched in the industry."
+            quote="From emergency repairs to preventive maintenance, Tre-Mic is our go-to partner. They have saved us thousands in downtime costs. You won’t find more reliable technicians."
             name="Kareem Ismaila"
-            image="/placeholder.svg?height=48&width=48"
           />
         </div>
       </div>
     </section>
-  )
+  );
 }

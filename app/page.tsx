@@ -34,14 +34,14 @@ export default function Home() {
             Your Partner in Excellence for Advanced Water System Installations
             and Sustainable Solutions.
           </p>
-          <button className="font-kumbh bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
-            Get a Quote
+          <button className="cursor-pointer font-kumbh bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
+            Contact us
           </button>
         </div>
       </section>
 
       {/* About Section */}
-      <div className="bg-white py-16 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <div className="bg-white py-16 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <div className="relative h-[400px]">
           <Image
             src="/image13.jpg"
@@ -51,7 +51,9 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="font-montserrat text-blue-900 font-medium mb-2">Who We Are</div>
+          <div className="font-montserrat text-blue-900 font-medium mb-2">
+            Who We Are
+          </div>
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-6">
             Delivering Excellence in Water Systems Installation and Maintenance
           </h2>
@@ -77,10 +79,12 @@ export default function Home() {
       </div>
 
       {/* Services Preview */}
-      <div className="bg-gray-100 py-16 px-4">
+      <div className="bg-gray-100 py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="font-montserrat text-blue-600 font-medium mb-2">What We Do</div>
+            <div className="font-montserrat text-blue-600 font-medium mb-2">
+              What We Do
+            </div>
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900">
               Comprehensive Water System Solutions
             </h2>
@@ -89,44 +93,28 @@ export default function Home() {
           <ServiceCarousel
             services={[
               {
-                id: "residential",
-                title: "Residential Water Systems",
-                description:
-                  "Complete water solutions for homes including filtration, softening, purification, and efficient distribution systems. We ensure clean, safe water for your family.",
+                id: 1,
+                title: "Custom Metal Fabrication",
                 image: "/placeholder.svg?height=200&width=400",
-                link: "/services/residential",
+                link: "/services",
               },
               {
-                id: "commercial",
-                title: "Commercial Water Systems",
-                description:
-                  "Scalable water management solutions for businesses, offices, and retail establishments with focus on efficiency and reliability. Reduce costs while ensuring quality.",
+                id: 2,
+                title: "Professional Installation",
                 image: "/placeholder.svg?height=200&width=400",
-                link: "/services/commercial",
+                link: "/services",
               },
               {
-                id: "industrial",
-                title: "Industrial Water Systems",
-                description:
-                  "Heavy-duty water treatment, recycling, and distribution systems for manufacturing and industrial facilities. Custom solutions for high-volume requirements.",
+                id: 3,
+                title: "Sales of Premium Materials & Parts",
                 image: "/placeholder.svg?height=200&width=400",
-                link: "/services/industrial",
+                link: "/services",
               },
               {
-                id: "maintenance",
+                id: 4,
                 title: "Maintenance & Repair",
-                description:
-                  "Regular maintenance and emergency repair services for all types of water systems. Keep your system running efficiently with our expert technicians.",
                 image: "/placeholder.svg?height=200&width=400",
-                link: "/services/maintenance",
-              },
-              {
-                id: "consultation",
-                title: "Water System Consultation",
-                description:
-                  "Expert advice on water system design, upgrades, and efficiency improvements. Our consultants help you make informed decisions for your water needs.",
-                image: "/placeholder.svg?height=200&width=400",
-                link: "/services/consultation",
+                link: "/services",
               },
             ]}
           />
@@ -140,23 +128,17 @@ export default function Home() {
       <div className="bg-blue-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
-            Ready to Upgrade Your Water System?
+            Need Precision Fabrication or Reliable Repairs?
           </h2>
           <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact our team of experts today for a free consultation and quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* <Link
-              href="/contact-us"
-              className="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-md font-medium transition-colors"
-            >
-              CONTACT US
-            </Link> */}
             <Link
-              href="/services"
-              className="font-kumbh bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 font-medium transition-colors"
+              href="/contact-us"
+              className="cursor-pointer font-kumbh bg-transparent border-2 border-white hover:bg-white/10 px-8 py-3 font-medium transition-colors"
             >
-              Get a Quote
+              Contact us
             </Link>
           </div>
         </div>

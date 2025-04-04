@@ -11,9 +11,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "About Us", link: "/about-us" },
-    { name: "Gallery", link: "/gallery" },
-    { name: "Contact Us", link: "/contact-us" },
+    { name: "Home", link: "/" },
+    { name: "About us", link: "/about-us" },
+    { name: "Services", link: "/our-services" },
+    // { name: "Contact us", link: "/contact-us" },
   ];
 
   // Prevent body scrolling when menu is open
@@ -27,9 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-30 flex flex-col justify-center items-center">
-      <div
-        className="w-full mx-auto p-3 lg:p-4 bg-white"
-      >
+      <div className="w-full mx-auto p-3 lg:p-4 bg-white">
         <div className="container mx-auto px-4 flex justify-between items-center h-full">
           <div
             className="flex items-center gap-2 cursor-pointer"
@@ -42,7 +41,7 @@ const Navbar = () => {
               height={24}
               className="lg:w-[60px] lg:h-[32px]"
             />
-            <h1 className="font-kumbh text-black hover:text-[#0884c6] text-sm lg:text-lg">
+            <h1 className="font-kumbh text-gray-700 hover:text-[#0884c6] text-sm lg:text-lg">
               Tre-Mic Technologies Ltd
             </h1>
           </div>
@@ -70,10 +69,10 @@ const Navbar = () => {
             <div className="flex items-center space-x-3 lg:space-x-4">
               <div className="hidden text-sm lg:flex space-x-2">
                 <button
-                  className="font-kumbh px-3 py-1 lg:px-4 lg:py-2 text-[#0884c6] font-bold border border-[#0884c6]"
-                  // onClick={() => router.push("/contact")}
+                  className="cursor-pointer font-kumbh px-3 py-1 lg:px-4 lg:py-2 text-[#0884c6] font-bold border border-[#0884c6]"
+                  onClick={() => router.push("/contact-us")}
                 >
-                  Get a Quote
+                  Contact us
                 </button>
               </div>
 
@@ -82,7 +81,11 @@ const Navbar = () => {
                 className="lg:hidden"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
-                {menuOpen ? <X size={28} color="black" /> : <Menu size={28} color="black" />}
+                {menuOpen ? (
+                  <X size={28} color="black" />
+                ) : (
+                  <Menu size={28} color="black" />
+                )}
               </button>
             </div>
           </>
@@ -122,10 +125,10 @@ const Navbar = () => {
 
             <div className=" text-sm lg:flex space-x-2">
               <button
-                className="font-kumbh px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
-                // onClick={() => router.push("/contact")}
+                className="cursor-pointer font-kumbh px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
+                onClick={() => router.push("/contact-us")}
               >
-                Get a Quote
+                Contact us
               </button>
             </div>
           </div>

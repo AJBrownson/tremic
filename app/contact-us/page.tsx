@@ -34,7 +34,7 @@ export default function ContactUs() {
       </div>
 
       {/* Contact Information */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -181,7 +181,7 @@ export default function ContactUs() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="container flex flex-col lg:flex-row justify-between px-6 md:px-8 lg:px-20">
           <div className="">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">

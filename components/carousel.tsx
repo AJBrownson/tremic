@@ -7,12 +7,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
-// import { button } from "@/components/ui/button"
 
 interface Service {
-  id: string
+  id: number
   title: string
-  description: string
   image: string
   link: string
 }
@@ -109,8 +107,7 @@ export function ServiceCarousel({ services }: ServiceCarouselProps) {
                 <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
               </div>
               <div className="p-6 h-1/2 flex flex-col">
-                <h3 className="text-xl font-bold text-blue-800 mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
+                <h3 className="text-xl font-bold text-blue-800">{service.title}</h3>
                 <Link
                   href={service.link}
                   className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center mt-auto"
