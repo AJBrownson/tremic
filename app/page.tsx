@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ServiceCarousel } from "@/components/carousel";
+import ServicesCard from "@/components/services-card"
 import { TestimonialSection } from "@/components/testimonials";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
             Tre-Mic Technologies Ltd
           </h1>
           <p className="font-kumbh text-xl md:text-2xl text-center max-w-3xl mb-8">
-            Your Partner in Excellence for Advanced Water System Installations
+            Your Partner in Excellence for Advanced Fabrication, Installations
             and Sustainable Solutions.
           </p>
           <button className="cursor-pointer font-kumbh bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
@@ -58,7 +58,7 @@ export default function Home() {
             Delivering Excellence in Water Systems Installation and Maintenance
           </h2>
           <p className="font-kumbh text-gray-700 mb-6">
-            With over 15 years of experience, Tre-Mic specializes in installing,
+            With over 20 years of experience, Tre-Mic specializes in installing,
             and maintaining advanced water systems for residential, commercial,
             and industrial applications. Our commitment to quality, innovation,
             and sustainability has made us a trusted partner for clients across
@@ -86,38 +86,11 @@ export default function Home() {
               What We Do
             </div>
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900">
-              Comprehensive Water System Solutions
+              Comprehensive Fabrication and Installation Solutions
             </h2>
           </div>
 
-          <ServiceCarousel
-            services={[
-              {
-                id: 1,
-                title: "Custom Metal Fabrication",
-                image: "/placeholder.svg?height=200&width=400",
-                link: "/services",
-              },
-              {
-                id: 2,
-                title: "Professional Installation",
-                image: "/placeholder.svg?height=200&width=400",
-                link: "/services",
-              },
-              {
-                id: 3,
-                title: "Sales of Premium Materials & Parts",
-                image: "/placeholder.svg?height=200&width=400",
-                link: "/services",
-              },
-              {
-                id: 4,
-                title: "Maintenance & Repair",
-                image: "/placeholder.svg?height=200&width=400",
-                link: "/services",
-              },
-            ]}
-          />
+          <ServicesCard />
         </div>
       </div>
 
