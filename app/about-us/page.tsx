@@ -155,7 +155,7 @@ export default function AboutUs() {
                 Craftsmanship
               </h3>
               <p className="font-kumbh text-gray-600">
-                With over two decades in the industry, we don't cut corners—we
+                With over two decades in the industry, we don&lsquo;t cut corners—we
                 perfect them. Every weld, installation, and repair reflects our
                 uncompromising standards for precision and durability.
               </p>
@@ -179,7 +179,7 @@ export default function AboutUs() {
               </h3>
               <p className="font-kumbh text-gray-600">
                 From emergency repairs to scheduled maintenance, we deliver
-                solutions built to last. When we say it's done right, it stays
+                solutions built to last. When we say it&lsquo;s done right, it stays
                 right.
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function AboutUs() {
                 Partnership
               </h3>
               <p className="font-kumbh text-gray-600">
-                We don't just complete projects—we build relationships. Your
+                We don&lsquo;t just complete projects—we build relationships. Your
                 success is our measure of excellence, today and for decades to
                 come.
               </p>
@@ -226,7 +226,7 @@ export default function AboutUs() {
           </h2>
           <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact our team today to discuss your fabrication, installation, or
-            repair needs – let's build your solution together
+            repair needs – let&lsquo;s build your solution together
           </p>
           <Link
             href="/contact-us"

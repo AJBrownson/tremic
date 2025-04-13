@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PhoneCall, Mail, Download, Facebook, Twitter, Linkedin, MessageCircle } from "lucide-react"
+import { PhoneCall, Mail, Facebook, Twitter, Linkedin, } from "lucide-react"
 
 const Footer = () => {
   return (

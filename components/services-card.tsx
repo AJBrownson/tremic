@@ -1,5 +1,5 @@
-import { Divide } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ServicesCard() {
   const cards = [
@@ -35,7 +35,7 @@ export default function ServicesCard() {
         {cards.map((card) => (
           <section key={card.id} className="overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
-              <img
+              <Image
                 src={card.imageUrl || "/placeholder.svg"}
                 alt={card.title}
                 className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"

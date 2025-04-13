@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   CheckCircle,
-  ArrowRight,
-  Clock,
   PenToolIcon as Tool,
   Settings,
   Wrench,
@@ -272,7 +270,7 @@ export default function ServicesPage() {
           </h2>
           <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact our team today to discuss your fabrication, installation, or
-            repair needs – let's build your solution together
+            repair needs – let&lsquo;s build your solution together
           </p>
           <Link
             href="/contact-us"

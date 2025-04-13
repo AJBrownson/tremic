@@ -7,7 +7,6 @@ import {
   Clock,
   MessageCircle,
   Facebook,
-  Instagram,
 } from "lucide-react";
 import FaqAccordion from "@/components/faq-accordion";
 
