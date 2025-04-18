@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ServicesCard from "@/components/services-card"
+import ServicesCard from "@/components/services-card";
 import { TestimonialSection } from "@/components/testimonials";
 
 export default function Home() {
@@ -33,8 +33,8 @@ export default function Home() {
           <p className="font-kumbh text-xl md:text-2xl text-center max-w-3xl mb-8">
             {/* Your Partner in Excellence for Advanced Fabrication, Installations
             and Sustainable Solutions. */}
-            Your Partner in Excellence for Advanced Fabrication, Water System Solution
-            and Sustainability.
+            Your Partner in Excellence for Advanced Fabrication, Water System
+            Solution and Sustainability.
           </p>
           <button className="cursor-pointer font-kumbh bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 flex items-center gap-2 transition-colors">
             Contact us
@@ -56,27 +56,25 @@ export default function Home() {
           <div className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-2">
             Who We Are
           </div>
-          <h2 className="font-montserrat text-blue-900 font-medium mb-6">
-            We Deliver Excellence Service in Water Solutions such as  Breathhwaite Tank, Fibre Glass tank, Currigated Tanks, Circular Tank, Fabrication, Maintenance, Repair and Sales.
-          </h2>
           <p className="font-kumbh text-gray-700 mb-6">
-            With over 20 years of experience, Tre-Mic specializes in installing,
-            and maintaining advanced water systems for residential, commercial,
-            and industrial applications. Our commitment to quality, innovation,
-            and sustainability has made us a trusted partner for clients across
-            the the globe.
+            Tre-Mic is your partner in excellence for sustainable water
+            solutions, fiberglass and steel tank installations, maintenance &
+            repairs; advanced fabrications and sales of high quality water
+            solutions materials.
+          </p>
+          <p className="font-kumbh text-gray-700 mb-6">
+            With over 20 years of experience, Tre-Mic specializes in the
+            installation and maintenance of advanced water tanks for
+            residential, commercial, and industrial settings. Our commitment to
+            quality, innovation, and sustainability has made us a trusted
+            partner to our clients across Africa.
           </p>
           <p className="font-kumbh text-gray-700 mb-8">
-            We pride ourselves on delivering customized solutions that meet the
-            unique needs of each client, ensuring efficient water usage, reduced
-            environmental impact, and long-term reliability.
+            We pride ourselves in delivering cutting-edge water tank
+            installations as advanced fabrications that meet the needs of each
+            of our clients, ensuring efficient water usage, reduced
+            environmental impact and long-term reliability.
           </p>
-          {/* <Link
-            href="/about-us"
-            className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors self-start"
-          >
-            LEARN MORE
-          </Link> */}
         </div>
       </div>
 

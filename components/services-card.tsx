@@ -5,25 +5,31 @@ export default function ServicesCard() {
   const cards = [
     {
       id: 1,
-      title: "Custom Metal Fabrication",
+      title: "Installation of Fibre Glass",
       imageUrl: "/image1.jpg",
       link: "/our-services",
     },
     {
       id: 2,
-      title: "Professional Installation",
+      title: "Installation of Steel Water Tanks",
       imageUrl: "/about2.jpg",
       link: "/our-services",
     },
     {
       id: 3,
-      title: "Sales of Premium Materials & Parts",
+      title: "Maintenance / Repairs",
       imageUrl: "/about3.jpg",
       link: "/our-services",
     },
     {
       id: 4,
-      title: "Maintenance & Repair",
+      title: "Sales of Water Solutions Materials",
+      imageUrl: "/services1.jpg",
+      link: "/our-services",
+    },
+    {
+      id: 5,
+      title: "Advanced Fabrication",
       imageUrl: "/services1.jpg",
       link: "/our-services",
     },
@@ -31,7 +37,7 @@ export default function ServicesCard() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card) => (
           <section key={card.id} className="overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
