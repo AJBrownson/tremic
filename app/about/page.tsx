@@ -7,23 +7,6 @@ export default function AboutUs() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Header */}
-      {/* <div className="relative h-[300px] w-full mt-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-teal-800 z-0"></div>
-
-        
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="font-montserrat text-5xl md:text-7xl font-bold text-center mb-6">
-            About Us
-          </h1>
-          <div className="font-kumbh flex items-center gap-2 text-lg">
-            <Link href="/" className="hover:underline">
-              Home
-            </Link>
-            <ChevronRight className="h-4 w-4" />
-            <span>About Us</span>
-          </div>
-        </div>
-      </div> */}
       <div className="relative h-[300px] w-full mt-10">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"

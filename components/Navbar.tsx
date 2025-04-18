@@ -23,13 +23,13 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "Services", link: "/our-services" },
     { name: "Work", link: "/work" },
-    { name: "About", link: "/about-us" },
+    { name: "About", link: "/about" },
   ];
 
   const submenuItems = [
-    { name: "About Us", link: "/about-us" },
-    { name: "Our Team", link: "/our-team" },
-    { name: "Registered with the CAC", link: "/cac" },
+    { name: "About Us", link: "/about" },
+    { name: "Our Team", link: "/about/our-team" },
+    { name: "Registered with the CAC", link: "/about/cac" },
   ];
 
   // Prevent body scrolling when menu is open
