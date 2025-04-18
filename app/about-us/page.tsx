@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { Lightbulb, Target, ChevronRight } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutUs() {
   return (
@@ -23,7 +24,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div> */}
-        <div className="relative h-[300px] w-full mt-10">
+      <div className="relative h-[300px] w-full mt-10">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/pattern.svg)" }}
@@ -70,13 +71,12 @@ export default function AboutUs() {
                 Excellence in Fabrication, Installation & Beyond
               </h3>
               <p className="font-kumbh text-gray-700">
-                Since 2001, we’ve been a trusted name in precision fabrication,
-                seamless installation, and reliable maintenance—delivering
-                top-tier solutions. Officially registered in 2019, we bring over
-                two decades of hands-on expertise, blending time-tested
-                craftsmanship with cutting-edge technology. Whether it’s custom
-                metalwork, industrial installations, or long-term maintenance
-                plans, we don’t just meet expectations—we redefine them.
+                Since 2001, we’ve been a trusted name in seamless and
+                professional steel and fibreglass water tank installation,
+                precision fabrication, and reliable maintenance, delivering
+                top-tier solutions. Officially registered with the CAC in 2019,
+                we bring over two decades of hands-on expertise, blending
+                time-tested craftsmanship with cutting-edge technology.
               </p>
             </div>
           </div>
@@ -131,6 +131,59 @@ export default function AboutUs() {
       </section>
 
       {/* Values and Mission */}
+      <section className="bg-gray-50 py-16 px-4 md:px-10">
+        <div className="container relative z-10 mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Our Purpose
+            </h2>
+          </div>
+
+          {/* Cards Container */}
+          <div className="flex flex-col md:flex-row gap-8 mx-auto">
+            {/* Vision Card */}
+            <Card className="w-full flex justify-center md:w-1/2 bg-white/10 shadow-md">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-blue-200">
+                  <Lightbulb className="h-6 w-6 text-blue-700" />
+                </div>
+                <CardTitle className="font-montserrat text-2xl font-bold text-blue-800">
+                  Our Vision
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 font-kumbh text-gray-600">
+                  To be recognized as a front liner in African fibre and steel
+                  tank installations, maintenance, fabrication and sales of
+                  water solutions materials.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Mission Card */}
+            <Card className="w-full md:w-1/2 bg-white/10 shadow-md">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-blue-200">
+                  <Target className="h-6 w-6 text-blue-700" />
+                </div>
+                <CardTitle className="font-montserrat text-2xl font-bold text-blue-800">
+                  Our Mission
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 font-kumbh text-gray-600">
+                  To provide quality and professional services in GRP sectional
+                  water tank installations, maintenance, repairs, advanced
+                  fabrications and sales of quality water solutions materials.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
       <section className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-12">
@@ -138,6 +191,58 @@ export default function AboutUs() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 21h8m-4-4v4m4-18H8a2 2 0 00-2 2v2a6 6 0 0012 0V5a2 2 0 00-2-2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-3">
+                Excellence
+              </h3>
+              <p className="font-kumbh text-gray-600">
+                We aim for nothing short of excellence in every project,
+                ensuring that our craftsmanship consistently exceeds
+                expectations.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 12v1m8-5H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2v-6a2 2 0 00-2-2zM16 7V5a2 2 0 00-2-2H10a2 2 0 00-2 2v2"
+                  />
+                </svg>
+              </div>
+              <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-3">
+                Professionalism
+              </h3>
+              <p className="font-kumbh text-gray-600">
+                From communication to delivery, our team operates with
+                integrity, respect, and a strong commitment to professional
+                standards.
+              </p>
+            </div>
+
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg
@@ -155,9 +260,36 @@ export default function AboutUs() {
                 Craftsmanship
               </h3>
               <p className="font-kumbh text-gray-600">
-                With over two decades in the industry, we don&lsquo;t cut corners—we
-                perfect them. Every weld, installation, and repair reflects our
-                uncompromising standards for precision and durability.
+                With over two decades in the industry, we don&lsquo;t cut
+                corners—we perfect them. Every weld, installation, and repair
+                reflects our uncompromising standards for precision and
+                durability.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-3">
+                Responsiveness
+              </h3>
+              <p className="font-kumbh text-gray-600">
+                We respond quickly and efficiently to our clients’ needs,
+                ensuring smooth communication and rapid resolution at every
+                step.
               </p>
             </div>
 
@@ -179,8 +311,8 @@ export default function AboutUs() {
               </h3>
               <p className="font-kumbh text-gray-600">
                 From emergency repairs to scheduled maintenance, we deliver
-                solutions built to last. When we say it&lsquo;s done right, it stays
-                right.
+                solutions built to last. When we say it&lsquo;s done right, it
+                stays right.
               </p>
             </div>
 
@@ -209,9 +341,9 @@ export default function AboutUs() {
                 Partnership
               </h3>
               <p className="font-kumbh text-gray-600">
-                We don&lsquo;t just complete projects—we build relationships. Your
-                success is our measure of excellence, today and for decades to
-                come.
+                We don&lsquo;t just complete projects—we build relationships.
+                Your success is our measure of excellence, today and for decades
+                to come.
               </p>
             </div>
           </div>

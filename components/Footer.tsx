@@ -18,7 +18,7 @@ const Footer = () => {
                   className="object-contain rounded-full"
                 />
               </div>
-              <span className="text-white font-bold text-xl font-kumbh">Tre-Mic Technologies Ltd</span>
+              <span className="text-white font-bold text-xl font-kumbh">Tre-Mic Technology Ltd</span>
             </div>
             <p className="text-gray-400 font-kumbh mb-4">
               Your trusted partner for advanced water systems installation and maintenance.
@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="font-kumbh max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-800 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} Tre-Mic Technologies Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tre-Mic Technology Ltd. All rights reserved.</p>
         </div>
       </footer>
    </>

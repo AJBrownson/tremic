@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 
-
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
@@ -58,57 +57,43 @@ const Navbar = () => {
               className="lg:w-[60px] lg:h-[32px]"
             />
             <h1 className="font-kumbh text-gray-700 hover:text-[#0884c6] text-sm lg:text-lg">
-              Tre-Mic Technologies Ltd
+              Tre-Mic Technology Ltd
             </h1>
           </div>
 
           {/* Desktop Navigation */}
           <>
-            {/* <div className="hidden lg:flex space-x-16 text-gray-700">
-              {menuItems.map((item) => (
-                <div key={item.name} className="text-sm">
-                  <a
-                    href={item.link}
-                    className={`transition font-kumbh ${
-                      pathname === item.link
-                        ? "text-[#0884c6]"
-                        : "hover:text-[#0884c6]"
-                    }`}
-                  >
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-            </div> */}
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {menuItems.map((item, index) =>
                 item.name === "About" ? (
-                  // About Dropdown - Desktop
-                  <DropdownMenu key={index} onOpenChange={(open) => setIsDesktopAboutOpen(open)}>
-                  <DropdownMenuTrigger asChild>
-                    <button
-                      className="cursor-pointer flex items-center gap-1 text-gray-700 hover:text-gray-900"
-                    >
-                      About
-                      {isDesktopAboutOpen ? (
-                        <ChevronUp className="h-4 w-4" />
-                      ) : (
-                        <ChevronDown className="h-4 w-4" />
-                      )}
-                    </button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48">
-                    {submenuItems.map((subItem, subIndex) => (
-                      <DropdownMenuItem key={subIndex} asChild>
-                        <Link href={subItem.link} className="w-full cursor-pointer">
-                          {subItem.name}
-                        </Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-                
+                  // Dropdown for About menu item
+                  <DropdownMenu
+                    key={index}
+                    onOpenChange={(open) => setIsDesktopAboutOpen(open)}
+                  >
+                    <DropdownMenuTrigger asChild>
+                      <button className="cursor-pointer flex items-center gap-1 text-gray-700 hover:text-gray-900">
+                        About
+                        {isDesktopAboutOpen ? (
+                          <ChevronUp className="h-4 w-4" />
+                        ) : (
+                          <ChevronDown className="h-4 w-4" />
+                        )}
+                      </button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="start" className="w-48">
+                      {submenuItems.map((subItem, subIndex) => (
+                        <DropdownMenuItem key={subIndex} asChild>
+                          <Link
+                            href={subItem.link}
+                            className="w-full cursor-pointer"
+                          >
+                            {subItem.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
                 ) : (
                   // Regular menu items
                   <Link
@@ -150,89 +135,89 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-  className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 transition-all ease-in-out duration-300 ${
-    menuOpen ? "block" : "hidden"
-  }`}
-  onClick={() => setMenuOpen(false)}
->
-  <div
-    className="absolute top-0 left-0 w-4/5 max-w-[280px] h-screen bg-white shadow-lg p-6 flex flex-col space-y-6 transform transition-all ease-in-out duration-300"
-    onClick={(e) => e.stopPropagation()}
-  >
-    {/* Close Button */}
-    <button className="self-end" onClick={() => setMenuOpen(false)}>
-      <X size={28} color="black" />
-    </button>
-
-    {/* Mobile Menu Items */}
-    {menuItems.map((item) => {
-      if (item.name === "About") {
-        return (
-          <div key={item.name}>
-            <button
-              onClick={() => setSubmenuOpen(!submenuOpen)}
-              className="flex items-center justify-between w-full font-kumbh text-gray-700 text-base hover:text-[#0884c6]"
-            >
-              {item.name}
-              {submenuOpen ? (
-                <ChevronUp className="w-4 h-4 ml-1" />
-              ) : (
-                <ChevronDown className="w-4 h-4 ml-1" />
-              )}
-            </button>
-
-            {/* Submenu items */}
-            {submenuOpen && (
-              <div className="ml-4 mt-2 space-y-2">
-                {submenuItems.map((subItem) => (
-                  <a
-                    key={subItem.name}
-                    href={subItem.link}
-                    className={`block font-kumbh text-sm text-gray-600 ${
-                      pathname === subItem.link
-                        ? "text-[#0884c6]"
-                        : "hover:text-[#0884c6]"
-                    }`}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {subItem.name}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        );
-      }
-
-      return (
-        <a
-          key={item.name}
-          href={item.link}
-          className={`font-kumbh block text-gray-700 text-base ${
-            pathname === item.link
-              ? "text-[#0884c6]"
-              : "hover:text-[#0884c6]"
+          className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 transition-all ease-in-out duration-300 ${
+            menuOpen ? "block" : "hidden"
           }`}
           onClick={() => setMenuOpen(false)}
         >
-          {item.name}
-        </a>
-      );
-    })}
+          <div
+            className="absolute top-0 left-0 w-4/5 max-w-[280px] h-screen bg-white shadow-lg p-6 flex flex-col space-y-6 transform transition-all ease-in-out duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button className="self-end" onClick={() => setMenuOpen(false)}>
+              <X size={28} color="black" />
+            </button>
 
-    <div className="text-sm lg:flex space-x-2">
-      <button
-        className="cursor-pointer font-kumbh px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
-        onClick={() => {
-          router.push("/contact-us");
-          setMenuOpen(false);
-        }}
-      >
-        Contact us
-      </button>
-    </div>
-  </div>
-</div>
+            {/* Mobile Menu Items */}
+            {menuItems.map((item) => {
+              if (item.name === "About") {
+                return (
+                  <div key={item.name}>
+                    <button
+                      onClick={() => setSubmenuOpen(!submenuOpen)}
+                      className="flex items-center justify-between w-full font-kumbh text-gray-700 text-base hover:text-[#0884c6]"
+                    >
+                      {item.name}
+                      {submenuOpen ? (
+                        <ChevronUp className="w-4 h-4 ml-1" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 ml-1" />
+                      )}
+                    </button>
+
+                    {/* Submenu items */}
+                    {submenuOpen && (
+                      <div className="ml-4 mt-2 space-y-2">
+                        {submenuItems.map((subItem) => (
+                          <a
+                            key={subItem.name}
+                            href={subItem.link}
+                            className={`block font-kumbh text-sm text-gray-600 ${
+                              pathname === subItem.link
+                                ? "text-[#0884c6]"
+                                : "hover:text-[#0884c6]"
+                            }`}
+                            onClick={() => setMenuOpen(false)}
+                          >
+                            {subItem.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <a
+                  key={item.name}
+                  href={item.link}
+                  className={`font-kumbh block text-gray-700 text-base ${
+                    pathname === item.link
+                      ? "text-[#0884c6]"
+                      : "hover:text-[#0884c6]"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
+
+            <div className="text-sm lg:flex space-x-2">
+              <button
+                className="cursor-pointer font-kumbh px-3 py-1 text-[#0884c6] font-bold border border-[#0884c6]"
+                onClick={() => {
+                  router.push("/contact-us");
+                  setMenuOpen(false);
+                }}
+              >
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );
