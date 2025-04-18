@@ -1,33 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  CheckCircle,
-  PenToolIcon as Tool,
-  Settings,
-  Wrench,
-  ShoppingCart,
-} from "lucide-react";
 import { ChevronRight } from "lucide-react";
+
 
 export default function ServicesPage() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      {/* <div className="relative h-[300px] w-full mt-10">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-teal-800 z-0"></div>
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="font-montserrat text-5xl md:text-7xl font-bold text-center mb-6">
-          Our Services
-          </h1>
-          <div className="font-kumbh flex items-center gap-2 text-lg">
-            <Link href="/" className="hover:underline">
-              Home
-            </Link>
-            <ChevronRight className="h-4 w-4" />
-            <span>Our Services</span>
-          </div>
-        </div>
-      </div> */}
       <div className="relative h-[300px] w-full mt-10">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -64,7 +43,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Custom Metal Fabrication */}
       <section className="px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -78,185 +56,127 @@ export default function ServicesPage() {
             </div>
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Tool className="h-8 w-8 text-blue-600" />
-                <h2 className="text-3xl font-bold text-blue-900">
-                  Custom Metal Fabrication
+                <h2 className="text-3xl font-bold font-montserrat text-blue-900">
+                  FRP Water Tank Installation
                 </h2>
               </div>
-              <p className="text-gray-700 mb-6">
-                From blueprints to finished products – we craft durable
-                solutions for industrial, commercial, and residential clients.
+              <p className="text-gray-700 font-kumbh">
+                Fiberglass Reinforced Plastics (FRP) water tank panels are
+                designed with special shapes for maximizing safety against
+                stress and deformation. GRP water panels are manufactured by the
+                oil-hydraulic press under high temperatures and high pressure.
+                They maintain top water pressure strength and there is no
+                dimensional deviation by temperature change
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Structural Steel Fabrication
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">Architectural Metalwork</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Precision Sheet Metal Components
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Welding & Machining Services
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Professional Installation */}
       <section className="py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/about2.jpg"
-                alt="Professional Installation Services"
+                alt="steel water tank installation"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="md:order-1">
               <div className="flex items-center gap-3 mb-4">
-                <Settings className="h-8 w-8 text-blue-600" />
-                <h2 className="text-3xl font-bold text-blue-900">
-                  Professional Installation
+                <h2 className="text-3xl font-bold font-montserrat text-blue-900">
+                  Steel Water Tank Installation
                 </h2>
               </div>
-              <p className="text-gray-700 mb-6">
-                Flawless execution, on-time delivery – our certified installers
-                handle projects of any scale.
+              <p className="text-gray-700 font-kumbh">
+                Galvanized steel water tanks are made from corrugated sheets,
+                offering strength, durability and longevity. They can withstand
+                high pressures, extreme temperatures and impacts.
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Industrial Equipment Installation
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Structural Steel Erection
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">Mechanical System Setup</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Turnkey Project Management
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sales of Premium Materials & Parts */}
       <section className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/about3.jpg"
-                alt="Premium Materials & Parts"
+                alt="maintenance and repairs"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <ShoppingCart className="h-8 w-8 text-blue-600" />
-                <h2 className="text-3xl font-bold text-blue-900">
-                  Sales of Premium Materials & Parts
+                <h2 className="text-3xl font-bold font-montserrat text-blue-900">
+                  Maintenance / Repairs
                 </h2>
               </div>
-              <p className="text-gray-700 mb-6">
-                We supply top-tier materials – paired with expert advice to
-                match your project needs.
+              <p className="text-gray-700 font-kumbh">
+                We offer professional maintenance and repairs of FRP and steel
+                water tanks; coating and recoating of tanks and general
+                consultancy in water technology solutions
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    High-Grade Metals & Alloys
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Replacement Parts & Components
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Custom-Order Fabrication Materials
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Repair & Emergency Services */}
+      <section className="py-16 px-4 md:px-10 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/services1.jpg"
+                alt="Sales"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-3xl font-bold font-montserrat text-blue-900">
+                  Sales
+                </h2>
+              </div>
+              <p className="text-gray-700 font-kumbh">
+                We sell quality water solutions materials such as FRP and steel
+                plates, tank installation accessories, bolts and nuts, among
+                others.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/services1.jpg"
-                alt="Repair & Emergency Services"
+                alt="Advanced Fabrication"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Wrench className="h-8 w-8 text-blue-600" />
-                <h2 className="text-3xl font-bold text-blue-900">
-                  Maintenance & Repairs
+                <h2 className="text-3xl font-bold font-montserrat text-blue-900">
+                  Advanced Fabrication
                 </h2>
               </div>
-              <p className="text-gray-700 mb-6">
-                When time is critical, our rapid-response team gets you back
-                online FAST.
+              <p className="text-gray-700 font-kumbh">
+                From blueprints to finished products – we craft durable
+                materials such as iron skids, internal and external
+                reinforcements, ladders etc, for our industrial, commercial, and
+                residential clients.
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Lubrication & Calibration Services
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    Structural Damage Repair
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">Equipment Refurbishment</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
