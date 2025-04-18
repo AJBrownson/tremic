@@ -39,6 +39,8 @@ export default function ServicesCard() {
                 src={card.imageUrl || "/placeholder.svg"}
                 alt={card.title}
                 className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                width="20"
+                height="20"
               />
             </div>
             <div>
