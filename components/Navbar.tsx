@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const submenuItems = [
     { name: "About Us", link: "/about-us" },
-    { name: "Our Team", link: "/team" },
+    { name: "Our Team", link: "/our-team" },
     { name: "Registered with the CAC", link: "/cac" },
   ];
 
