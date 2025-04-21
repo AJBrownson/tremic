@@ -51,6 +51,14 @@ export default function ContactUs() {
           {/* Contact form section  */}
           <ContactForm />
 
+          <div className="text-center mt-12 md:mt-14 mb-8">
+            <p className="text-base md:text-xl font-kumbh text-gray-700 max-w-3xl mx-auto">
+              Keen to chat with one of our experts? Kindly reach out to us
+              either via the number or email below and we&apos;ll get you booked in
+              with an appropriate member of our team.
+            </p>
+          </div>
+
           <div className="mt-5 md:mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Contact Details */}
             <div className="bg-white p-8 rounded-lg shadow-md">
@@ -213,7 +221,7 @@ export default function ContactUs() {
           </h2>
           <p className="font-kumbh text-xl mb-8 text-blue-100">
             Contact us today to discuss your project and discover how we at
-            Tre-mic Technologies Ltd can help.
+            Tre-mic Technology Ltd can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
