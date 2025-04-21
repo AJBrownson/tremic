@@ -1,3 +1,4 @@
+import ScrollFadeIn from "@/components/ScrollFadeIn"
 import { cn } from "@/lib/utils";
 
 interface TestimonialProps {
@@ -36,7 +37,7 @@ export function Testimonial({
 
 export function TestimonialSection() {
   return (
-    <section className="py-16 px-4 md:px-10 bg-gray-50">
+    <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="font-montserrat text-blue-600 font-medium mb-2">
@@ -61,6 +62,6 @@ export function TestimonialSection() {
           />
         </div>
       </div>
-    </section>
+    </ScrollFadeIn>
   );
 }

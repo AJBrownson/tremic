@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Lightbulb, Target, ChevronRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ScrollFadeIn from "@/components/ScrollFadeIn"
+
 
 export default function AboutUs() {
   return (
@@ -29,7 +31,7 @@ export default function AboutUs() {
       </div>
 
       {/* Company Overview */}
-      <section className="py-16 px-4 md:px-10">
+      <ScrollFadeIn className="py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -111,10 +113,10 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* Values and Mission */}
-      <section className="bg-gray-50 py-16 px-4 md:px-10">
+      <ScrollFadeIn className="bg-gray-50 py-16 px-4 md:px-10">
         <div className="container relative z-10 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
@@ -164,10 +166,10 @@ export default function AboutUs() {
             </Card>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* Core Values */}
-      <section className="py-16 px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-12">
             Our Core Values
@@ -331,10 +333,10 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 md:px-10 bg-blue-900 text-white">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Ready to Work With Us?
@@ -350,7 +352,7 @@ export default function AboutUs() {
             Contact Us
           </Link>
         </div>
-      </section>
+      </ScrollFadeIn>
     </main>
   );
 }

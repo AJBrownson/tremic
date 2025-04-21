@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-
+import ScrollFadeIn from "@/components/ScrollFadeIn"
 
 export default function ServicesPage() {
   return (
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Services Introduction */}
-      <section className="py-4 md:py-8 lg:py-12 px-4 md:px-10 max-w-7xl mx-auto">
+      <ScrollFadeIn className="py-4 md:py-8 lg:py-12 px-4 md:px-10 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">
             Comprehensive Industrial Solutions
@@ -41,9 +41,9 @@ export default function ServicesPage() {
             project.
           </p>
         </div>
-      </section>
+      </ScrollFadeIn>
 
-      <section className="px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -71,9 +71,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
-      <section className="py-16 px-4 md:px-10">
+      <ScrollFadeIn className="py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -98,9 +98,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
-      <section className="py-16 px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -125,9 +125,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
-      <section className="py-16 px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -152,9 +152,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
-      <section className="py-16 px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -180,10 +180,10 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-900 text-white">
+      <ScrollFadeIn className="py-16 px-4 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Ready to Work With Us?
@@ -199,7 +199,7 @@ export default function ServicesPage() {
             Contact Us
           </Link>
         </div>
-      </section>
+      </ScrollFadeIn>
     </main>
   );
 }

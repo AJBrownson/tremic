@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Gallery from "@/components/gallery";
+import ScrollFadeIn from "@/components/ScrollFadeIn"
 
 export default function Work() {
   return (
@@ -28,7 +29,7 @@ export default function Work() {
           </div>
         </div>
 
-        <section className="py-16 px-4 md:px-10">
+        <ScrollFadeIn className="py-16 px-4 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -44,7 +45,7 @@ export default function Work() {
           <div>
             <Gallery />
           </div>
-        </section>
+        </ScrollFadeIn>
       </main>
     </>
   );

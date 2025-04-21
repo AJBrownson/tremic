@@ -11,6 +11,16 @@ import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { SiWhatsapp } from "react-icons/si";
 import FaqAccordion from "@/components/faq-accordion";
 import ContactForm from "@/components/contact-form";
+import ScrollFadeIn from "@/components/ScrollFadeIn"
+
+
+const phone = '+2348032460335';
+const message = 'Hello Tre-Mic Technology! I would like to inquire about your services.';
+const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+const link = isMobile
+  ? `whatsapp://send?phone=${phone}&text=${encodeURIComponent(message)}`
+  : `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
 
 export default function ContactUs() {
   return (
@@ -38,7 +48,7 @@ export default function ContactUs() {
       </div>
 
       {/* Contact Information */}
-      <section className="py-16 px-4 md:px-10">
+      <ScrollFadeIn className="py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -49,7 +59,7 @@ export default function ContactUs() {
             </p> */}
           </div>
 
-          {/* Contact form section  */}
+          {/* Contact form ScrollFadeIn  */}
           <ContactForm />
 
           <div className="text-center mt-12 md:mt-14 mb-8">
@@ -177,7 +187,7 @@ export default function ContactUs() {
                         <FaXTwitter className="h-5 w-5" />
                       </a>
                       <a
-                        href="https://wa.me/+2348032460335"
+                        href={link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
@@ -210,10 +220,10 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 md:px-10 bg-gray-50">
+      <ScrollFadeIn className="py-16 px-4 md:px-10 bg-gray-50">
         <div className="container flex flex-col lg:flex-row justify-between px-6 md:px-8 lg:px-20">
           <div className="">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -225,10 +235,10 @@ export default function ContactUs() {
           </div>
           <FaqAccordion />
         </div>
-      </section>
+      </ScrollFadeIn>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-900 text-white">
+      <ScrollFadeIn className="py-16 px-4 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Ready for Better Water Systems?
@@ -254,7 +264,7 @@ export default function ContactUs() {
             </a>
           </div>
         </div>
-      </section>
+      </ScrollFadeIn>
     </main>
   );
 }

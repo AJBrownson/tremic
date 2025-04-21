@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ServicesCard from "@/components/services-card";
 import { TestimonialSection } from "@/components/testimonials";
+import ScrollFadeIn from "@/components/ScrollFadeIn";
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <div className="bg-white py-16 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <ScrollFadeIn className="bg-white py-16 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <div className="relative h-[400px]">
           <Image
             src="/image13.jpg"
@@ -76,10 +77,10 @@ export default function Home() {
             environmental impact and long-term reliability.
           </p>
         </div>
-      </div>
+      </ScrollFadeIn>
 
       {/* Services Preview */}
-      <div className="bg-gray-100 py-16 px-4 md:px-10">
+      <ScrollFadeIn className="bg-gray-100 py-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="font-montserrat text-blue-600 font-medium mb-2">
@@ -92,13 +93,13 @@ export default function Home() {
 
           <ServicesCard />
         </div>
-      </div>
+      </ScrollFadeIn>
 
       {/* Testimonial Section */}
       <TestimonialSection />
 
       {/* CTA Section */}
-      <div className="bg-blue-900 text-white py-16 px-4">
+      <ScrollFadeIn className="bg-blue-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-6">
             Need Precision Fabrication or Reliable Repairs?
@@ -115,7 +116,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </ScrollFadeIn>
     </main>
   );
 }

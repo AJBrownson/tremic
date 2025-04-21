@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import ScrollFadeIn from "@/components/ScrollFadeIn"
 
 interface TeamMemberProps {
   name: string;
@@ -115,7 +116,7 @@ const Team: React.FC = () => {
               />
             ))}
           </div> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ScrollFadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => {
               const isLastSingleItem =
                 teamMembers.length % 3 === 1 &&
@@ -137,7 +138,7 @@ const Team: React.FC = () => {
                 </div>
               );
             })}
-          </div>
+          </ScrollFadeIn>
         </div>
       </div>
     </main>
