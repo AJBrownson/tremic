@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Gallery from "@/components/gallery";
 
-
 export default function Work() {
   return (
     <>

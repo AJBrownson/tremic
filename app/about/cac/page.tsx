@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
 export default function Cac() {
@@ -38,6 +39,16 @@ export default function Cac() {
                 Commission with RC number 1551872.
               </p>
             </div>
+          </div>
+
+          <div className="flex justify-center">
+            <Image
+              src="/cac.jpg"
+              alt="CAC Document"
+              width={600}
+              height={400}
+              className=" grayscale opacity-70 rounded-lg shadow-md"
+            />
           </div>
         </section>
       </main>
