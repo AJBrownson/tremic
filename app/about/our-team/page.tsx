@@ -23,7 +23,7 @@ const TeamMemberCard: React.FC<TeamMemberProps> = ({
           alt={name}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="px-6 py-4 flex-grow">
@@ -46,7 +46,7 @@ const Team: React.FC = () => {
       position: "CEO / Technical Director",
       description:
         "Fondly called Sam by all, he is the CEO/technical lead and director at Tre-Mic. He comes with over 2 decades of expertise in water tank installation design and implementation, coordinating maintenance and repairs and ensuring that each project is delivered with nothing short of excellence.",
-      imageUrl: "/team/sam.jpg",
+      imageUrl: "/ceo.jpg",
     },
     {
       name: "Adeiza Jinadu",
@@ -67,7 +67,7 @@ const Team: React.FC = () => {
       position: "Business Development Manager, North",
       description:
         "Excelling as an entrepreneur and expert business management strategist with innovative leadership skills, Tijjani thrives in dynamic environments, offering strategic insights, driving growth, and fostering sustainable success through visionary thinking and effective organizational development. He oversees the business's development in the north and ensures that the needs of the clients are met in every project.",
-      imageUrl: "/team/chris.jpg",
+      imageUrl: "/tijjani.jpg",
     },
   ];
 

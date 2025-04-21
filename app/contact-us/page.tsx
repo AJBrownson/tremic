@@ -9,12 +9,13 @@ import {
   Facebook,
 } from "lucide-react";
 import FaqAccordion from "@/components/faq-accordion";
+import ContactForm from "@/components/contact-form";
 
 export default function ContactUs() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Header */}
-        <div className="relative h-[300px] w-full mt-10">
+      <div className="relative h-[300px] w-full mt-10">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/pattern.svg)" }}
@@ -40,14 +41,17 @@ export default function ContactUs() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-              Get In Touch
+              Request a Proposal
             </h2>
-            <p className="font-kumbh text-xl text-gray-700 max-w-3xl mx-auto">
+            {/* <p className="font-kumbh text-xl text-gray-700 max-w-3xl mx-auto">
               Prefer to talk directly? Call, email, or DM us!
-            </p>
+            </p> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          {/* Contact form section  */}
+          <ContactForm />
+
+          <div className="mt-5 md:mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Contact Details */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="space-y-8">
@@ -123,8 +127,12 @@ export default function ContactUs() {
                     <h3 className="font-montserrat text-xl font-bold text-blue-800 mb-1">
                       Business Hours
                     </h3>
-                    <p className="font-kumbh text-gray-700">Monday - Friday: 8AM–5PM</p>
-                    <p className="font-kumbh text-gray-700">Saturday: 9AM–2PM</p>
+                    <p className="font-kumbh text-gray-700">
+                      Monday - Friday: 8AM–5PM
+                    </p>
+                    <p className="font-kumbh text-gray-700">
+                      Saturday: 9AM–2PM
+                    </p>
                     <p className="font-kumbh text-gray-700">Sunday: Closed</p>
                     <p className="font-kumbh text-gray-500 text-sm mt-1">
                       24/7 Emergency Service Available
