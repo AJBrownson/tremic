@@ -167,6 +167,7 @@ export default function ContactForm() {
           >
             Submit
           </button> */}
+          <div className="flex justify-center">
           <button
             type="submit"
             disabled={isSubmitting}
@@ -174,6 +175,7 @@ export default function ContactForm() {
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
+          </div>
         </form>
       </div>
 

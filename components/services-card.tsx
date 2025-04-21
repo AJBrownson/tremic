@@ -12,25 +12,25 @@ export default function ServicesCard() {
     {
       id: 2,
       title: "Installation of Steel Water Tanks",
-      imageUrl: "/about2.jpg",
+      imageUrl: "/steel.jpg",
       link: "/our-services",
     },
     {
       id: 3,
       title: "Maintenance / Repairs",
-      imageUrl: "/about3.jpg",
+      imageUrl: "/services1.jpg",
       link: "/our-services",
     },
     {
       id: 4,
       title: "Sales of Water Solutions Materials",
-      imageUrl: "/services1.jpg",
+      imageUrl: "/about3.jpg",
       link: "/our-services",
     },
     {
       id: 5,
       title: "Advanced Fabrication",
-      imageUrl: "/services1.jpg",
+      imageUrl: "/fabrication.jpg",
       link: "/our-services",
     },
   ]
@@ -44,9 +44,9 @@ export default function ServicesCard() {
               <Image
                 src={card.imageUrl || "/placeholder.svg"}
                 alt={card.title}
-                className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                width="20"
-                height="20"
+                className="object-cover w-full"
+                width="100"
+                height="100"
               />
             </div>
             <div>

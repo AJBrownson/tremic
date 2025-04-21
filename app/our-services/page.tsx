@@ -49,7 +49,7 @@ export default function ServicesPage() {
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/image1.jpg"
-                alt="Custom Metal Fabrication"
+                alt="FRP Water Tank Installation"
                 fill
                 className="object-cover"
               />
@@ -78,7 +78,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/about2.jpg"
+                src="/steel.jpg"
                 alt="steel water tank installation"
                 fill
                 className="object-cover"
@@ -105,7 +105,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/about3.jpg"
+                src="/services1.jpg"
                 alt="maintenance and repairs"
                 fill
                 className="object-cover"
@@ -132,7 +132,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/services1.jpg"
+                src="/about3.jpg"
                 alt="Sales"
                 fill
                 className="object-cover"
@@ -159,7 +159,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/services1.jpg"
+                src="/fabrication.jpg"
                 alt="Advanced Fabrication"
                 fill
                 className="object-cover"
