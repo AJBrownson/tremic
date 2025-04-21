@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import Gallery from "@/components/gallery";
+
 
 export default function Work() {
   return (
@@ -38,6 +40,10 @@ export default function Work() {
                 water system solutions and fabrication.
               </p>
             </div>
+          </div>
+
+          <div>
+            <Gallery />
           </div>
         </section>
       </main>

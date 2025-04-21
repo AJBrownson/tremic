@@ -21,7 +21,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
@@ -161,11 +161,18 @@ export default function ContactForm() {
             />
           </div>
 
-          <button
+          {/* <button
             type="submit"
             className="bg-[#0884c6] font-kumbh font-semibold cursor-pointer text-white px-6 py-2"
           >
             Submit
+          </button> */}
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="bg-[#0884c6] font-kumbh font-semibold cursor-pointer text-white px-6 py-2 disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? "Submitting..." : "Submit"}
           </button>
         </form>
       </div>

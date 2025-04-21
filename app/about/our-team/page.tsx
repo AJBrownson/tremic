@@ -53,21 +53,21 @@ const Team: React.FC = () => {
       position: "Int'l Procurement / Safety Engr.",
       description:
         "Adeiza is a versed engineer of over 2 decades of experience. He is armed with safety measures and doubles as the Safety Engineer and International Procurement executive of Tre-Mic. He coordinates all international procurements for the company and ensures that top-notch materials are used to deliver every project the company embarks upon.",
-      imageUrl: "/team/danni.jpg",
+      imageUrl: "/adeiza.jpg",
     },
     {
       name: "Abdulfattah Junayd",
       position: "Business Development Manager, South",
       description:
         "Abdulfattah is an experienced community and client manager, a business development strategist and communications expert. He oversees the company's business development in the south and ensures that the needs of the clients are met in all projects.",
-      imageUrl: "/team/chris.jpg",
+      imageUrl: "/junayd.jpg",
     },
     {
       name: "Tijjani Ibrahim",
       position: "Business Development Manager, North",
       description:
         "Excelling as an entrepreneur and expert business management strategist with innovative leadership skills, Tijjani thrives in dynamic environments, offering strategic insights, driving growth, and fostering sustainable success through visionary thinking and effective organizational development. He oversees the business's development in the north and ensures that the needs of the clients are met in every project.",
-      imageUrl: "/tijjani.jpg",
+      imageUrl: "/tijjani.png",
     },
   ];
 
