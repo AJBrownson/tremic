@@ -6,8 +6,9 @@ import {
   MapPin,
   Clock,
   MessageCircle,
-  Facebook,
 } from "lucide-react";
+import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { SiWhatsapp } from "react-icons/si";
 import FaqAccordion from "@/components/faq-accordion";
 import ContactForm from "@/components/contact-form";
 
@@ -54,8 +55,8 @@ export default function ContactUs() {
           <div className="text-center mt-12 md:mt-14 mb-8">
             <p className="text-base md:text-xl font-kumbh text-gray-700 max-w-3xl mx-auto">
               Keen to chat with one of our experts? Kindly reach out to us
-              either via the number or email below and we&apos;ll get you booked in
-              with an appropriate member of our team.
+              either via the number or email below and we&apos;ll get you booked
+              in with an appropriate member of our team.
             </p>
           </div>
 
@@ -158,18 +159,31 @@ export default function ContactUs() {
                     </h3>
                     <div className="flex gap-4 mt-2">
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/company/107023572/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
+                        aria-label="Linkedin"
+                      >
+                        <FaLinkedin className="h-5 w-5" />
+                      </a>
+                      <a
+                        href="https://x.com/TremicL12249"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-black text-white p-2 rounded-full transition-colors"
+                        aria-label="Facebook"
+                      >
+                        <FaXTwitter className="h-5 w-5" />
+                      </a>
+                      <a
+                        href="https://wa.me/+2348032460335"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
                         aria-label="WhatsApp"
                       >
-                        <MessageCircle className="h-5 w-5" />
-                      </a>
-                      <a
-                        href="#"
-                        className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
-                        aria-label="Facebook"
-                      >
-                        <Facebook className="h-5 w-5" />
+                        <SiWhatsapp className="h-5 w-5" />
                       </a>
                     </div>
                     <p className="font-kumbh text-gray-500 text-sm mt-2">

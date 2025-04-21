@@ -168,13 +168,13 @@ export default function ContactForm() {
             Submit
           </button> */}
           <div className="flex justify-center">
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-[#0884c6] font-kumbh font-semibold cursor-pointer text-white px-6 py-2 disabled:opacity-60 disabled:cursor-not-allowed"
-          >
-            {isSubmitting ? "Submitting..." : "Submit"}
-          </button>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="bg-[#0884c6] font-kumbh font-semibold cursor-pointer text-white px-6 py-2 disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {isSubmitting ? "Submitting..." : "Submit"}
+            </button>
           </div>
         </form>
       </div>
